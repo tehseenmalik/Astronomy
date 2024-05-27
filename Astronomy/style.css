@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #e6e4e4;
+}
+
+body {
+    width: 100%;
+    background-color: #000;
+}
+
+.section-p {
+    padding: 40px 80px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 54px;
+    line-height: 64px;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 45px;
+}
+
+
+h4 {
+    font-size: 25px;
+    line-height: 35px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.normal {
+    padding: 15px 18px;
+    font-size: 18px;
+    background-color: #FFAC00;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.transparent {
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin-top: 25px;
+}
+
+/* Nav */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px;
+}
+
+.logo a {
+    font-size: 28px;
+    font-weight: 700;
+    color: #e6e4e4;
+    font-family: "Lato", sans-serif;
+}
+
+nav .menue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .menue li a {
+    color: #e6e4e4;
+    padding-left: 40px;
+    font-size: 18px;
+    transition: 0.3s ease;
+
+}
+
+nav .menue li a:hover {
+    color: #FFAC00;
+}
+
+/* Hero */
+
+#hero {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.hero-content {
+    width: 45%;
+}
+
+#hero h1 {
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+#hero p {
+    word-spacing: 2px;
+}
+
+.hero-content h1 span {
+    color: #FFAC00;
+    line-height: 60px;
+}
+
+#hero button {
+    margin-top: 20px;
+    color: #000;
+    font-weight: 700;
+}
+
+#hero button:hover {
+    background-color: #dd9f24;
+}
+
+#hero .hero-img {
+    width: 35%;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Features */
+
+#feature {
+    text-align: center;
+    padding: 0 200px;
+    padding-bottom: 20px;
+}
+
+#feature h2 {
+    font-size: 50px;
+    color: #FFAC00;
+}
+
+.fe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 15px;
+    margin-top: 70px;
+}
+
+.fe-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fe-box img {
+    width: 30%;
+    filter: brightness(200%) contrast(200%);
+    margin-bottom: 18px;
+}
+
+.fe-box p {
+    margin-top: 3px;
+}
+
+/* Astronomy */
+
+#astronomy {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#astronomy img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    position: relative;
+}
+
+.astronomy-box {
+    width: 35%;
+    background-color: #2a2727a7;
+    padding: 30px;
+    position: absolute;
+    top: 170px;
+    left: 200px;
+    z-index: 9999;
+    border-radius: 5px;
+}
+
+.astronomy-box h4 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.astronomy-box h2 {
+    line-height: 43px;
+    margin-bottom: 10px;
+}
+
+
+.astronomy-box button:hover {
+    background-color: #dd9f24;
+    border: 2px solid transparent;
+}
+
+/* About */
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 200px;
+}
+
+#about .aboutleft {
+    width: 40%;
+}
+
+#about .aboutleft h2 {
+    font-weight: 550;
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 20px;
+}
+
+#about .aboutright {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 170px;
+    row-gap: 50px;
+}
+
+.aboutright .about-col {
+    text-align: center;
+}
+
+.aboutright .about-col h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.aboutright .about-col p {
+    font-size: 20px;
+}
+
+/* Who Are */
+
+#whoAre {
+    height: 78vh;
+    background-color: #3130305e;
+    margin: 150px 80px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#whoAre .whoAre-img {
+    width: 50%;
+    height: 85vh;
+    display: flex;
+    top: 20px;
+    position: absolute;
+    top: -80px;
+    padding-bottom: 60px;
+}
+
+#whoAre .whoAre-img img {
+    width: 40%;
+    object-fit: cover;
+    object-position: 56% 25%;
+}
+
+.whoAre-content {
+    width: 40%;
+    position: absolute;
+    right: 50px;
+    top: 60px;
+}
+
+.whoAre-content h4 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.whoAre-content h2 {
+    font-size: 60px;
+    font-weight: 530;
+    line-height: 55px;
+    margin-bottom: 20px;
+}
+
+.whoAre-contentB {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.whoAre-col {
+    display: flex;
+    gap: 15px;
+}
+
+.whoAre-content button:hover {
+    background-color: #c28916;
+    border: 2px solid transparent;
+}
+
+/* Planets */
+
+#planets {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.planet-heading {
+    width: 45%;
+}
+
+.planet-heading h4 {
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.planet-heading h2 {
+    font-weight: 540;
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+
+.planet-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 70px;
+}
+
+.planet-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.small {
+    width: 57%;
+}
+
+.big {
+    width: 85%;
+}
+
+.mars {
+    width: 45%;
+}
+
+.planet-col img {
+    transition: 0.3s ease;
+}
+
+.planet-col img:hover {
+    scale: 1.04;
+    margin-bottom: 2px;
+}
+
+.planet-col h4 {
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+.planet-col p {
+    margin-block: 18px;
+}
+
+.planet-col a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.planet-col a:hover,
+.planet-col i:hover {
+    color: #FFAC00;
+}
+
+/* observatories */
+
+#observatories {
+    margin-top: 50px;
+}
+
+.obsevatories-heading {
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.obsevatories-heading h2 {
+    margin-bottom: 15px;
+    font-size: 50px;
+    font-weight: 540;
+}
+
+.obsevatories-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 40px;
+}
+
+.obsevatories-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.obsevatories-box .image {
+    overflow: hidden;
+}
+
+.obsevatories-box img {
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.obsevatories-box img:hover {
+    scale: 1.06;
+    transform: skew(0.9deg);
+}
+
+.obsevatories-box h4 {
+    margin-block: 10px;
+    font-weight: 550;
+}
+
+.obsevatories-box p {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.obsevatories-box a {
+    transition: 0.3s ease;
+
+}
+
+.obsevatories-box a:hover {
+    color: #FFAC00;
+}
+
+/* explore */
+
+#explore {
+    height: 70vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/explore.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    margin: 40px 80px;
+}
+
+.explore-content {
+    width: 50%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.explore-content h2 {
+    font-size: 50px;
+    font-weight: 540;
+    margin-bottom: 15px;
+}
+
+.explore-content p {
+    margin-bottom: 20px;
+}
+
+.explore-content button {
+    transition: 0.3s ease;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.explore-content button:hover {
+    background-color: #c28916;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-top: 2px solid #5a5858;
+    margin: 20px 80px;
+}
+
+.footer-col h4 {
+    margin-bottom: 5px;
+    font-weight: 550;
+}
+
+.footer-col a,
+.footer-col i {
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.footer-col a:hover,
+.footer-col i:hover {
+    color: #c28916;
+}
+
+.footer-col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-col a {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-col ul {
+    margin-bottom: 15px;
+}
+
+.icon {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.newsletter-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.newsletter-col p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.newsletter-col input {
+    padding: 10px 20px;
+    font-size: 15px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    background-color: transparent;
+}
+
+.newsletter-col button {
+    background-color: #FFAC00;
+    padding: 8px 15px;
+    font-size: 16px;
+}
+
+.newsletter-col button:hover{
+    background-color: #c28916;
+}
